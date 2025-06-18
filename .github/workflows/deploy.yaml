@@ -45,6 +45,9 @@ jobs:
       - name: test context
         run: echo ${{ github.ref }}
 
+      - name: Github Output
+        run: echo $GITHUB_OUTPUT
+
       - name: Github output 
         id: step_2
         run: echo "my_variable = Hello" >> $GITHUB_OUTPUT
