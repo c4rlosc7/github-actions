@@ -46,8 +46,8 @@ jobs:
         run: echo ${{ github.ref }}
 
       - name: Github output 
-        id: step_my_variable
-        run: echo "my_variable = Hello " >> $GITHUB_OUTPUT
+        id: step_2
+        run: echo "my_variable = Hello" >> $GITHUB_OUTPUT
 
       - name: Get message
-        run: echo "${{ steps.step_my_variable.outputs.my_variable }}"
+        run: echo "${{ steps.step_2.outputs.my_variable }}"
