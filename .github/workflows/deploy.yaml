@@ -50,4 +50,4 @@ jobs:
         run: echo "my_variable = Hello " >> $GITHUB_OUTPUT
 
       - name: Get message
-        run: echo "${{ steps.step_my_variable}}"
+        run: echo "${{ steps.step_my_variable.outputs.my_variable }}"
