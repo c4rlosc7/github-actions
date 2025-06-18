@@ -1,0 +1,12 @@
+name: "Hello world from github-actions"
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy-hello:
+    runs-on: ubuntu-latest
+    steps:    
+      - run: echo "It done"
+      - run: echo "Migrations is done"
