@@ -46,4 +46,4 @@ jobs:
         run: echo ${{ github.ref }}
 
       - name: Github output 
-        run: echo $GITHUB_OUTPUT
+        run: echo "my_variable = Hello " >> $GITHUB_OUTPUT
