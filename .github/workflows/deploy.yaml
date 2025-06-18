@@ -44,3 +44,6 @@ jobs:
 
       - name: test context
         run: echo ${{ github.ref }}
+
+      - name: Github output 
+        run: echo $GITHUB_OUTPUT
