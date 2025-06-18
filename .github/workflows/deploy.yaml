@@ -1,13 +1,12 @@
-name: "Hello world from github-actions"
+name: "Deploy to server - github-actions [1-practice]"
 
 on:
   push:
-    branches: ["main"]
+    branches: ["1-practice"]
 
 jobs:
-  deploy-hello:
-    runs-on: ubuntu-latest
+  first_jobs:
+    runs-on: ubuntulatest
     steps:
-      - uses: actions/checkout@v4
-      - run: echo "It done"
-      - run: echo "Migrations is done"
+      - name: Hello world
+      - run: echo "Hello world from run"
