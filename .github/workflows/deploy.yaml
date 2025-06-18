@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      NAME: CarlosMartinez
+      NAME: ${{CarlosMartinez}}
 
     steps:
       - name: First Step - Hello world
