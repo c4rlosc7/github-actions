@@ -6,6 +6,7 @@ on:
 
 jobs:
   first_jobs:
+    name: 1-exercise
     runs-on: ubuntu-latest
 
     env:
