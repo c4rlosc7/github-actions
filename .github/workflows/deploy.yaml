@@ -1,8 +1,8 @@
-name: "Deploy to server - github-actions [1-practice]"
+name: "Deploy to server - github-actions [1-exercise]"
 
 on:
   push:
-    branches: ["1-practice"]
+    branches: ["1-exercise"]
 
 jobs:
   first_jobs:
