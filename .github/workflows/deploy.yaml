@@ -15,7 +15,7 @@ jobs:
   second_jobs:
     #if: false # configuro que no se ejecute el step
     # github.ref return branch to execute
-    if: ${{ github.ref == 'refs/heads/main' }}
+    #if: ${{ github.ref == 'refs/heads/main' }}
     needs: first_jobs
     runs-on: ubuntu-latest
 
@@ -23,4 +23,4 @@ jobs:
       - name: Second Step - Hello world
         run: echo "Hello world from run"
       - name: test context
-        run: echo ${{ github.ref == 'refs/heads/main' }}
+        run: echo ${{ github.ref }}
