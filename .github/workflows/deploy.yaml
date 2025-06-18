@@ -45,12 +45,12 @@ jobs:
       - name: test context
         run: echo ${{ github.ref }}
 
-      - name: Github Output
+      - name: Github Output File
         run: echo $GITHUB_OUTPUT
 
-      - name: Github output 
+      - name: Github Output 
         id: step_2
-        run: echo "my_variable = Hello" >> $GITHUB_OUTPUT
+        run: echo "my_variable=Hello" >> $GITHUB_OUTPUT
 
       - name: Get message
         run: echo "${{ steps.step_2.outputs.my_variable }}"
