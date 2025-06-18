@@ -7,6 +7,14 @@ on:
 jobs:
   first_jobs:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Hello world
+      - name: First Step - Hello world
+        run: echo "Hello world from run"
+
+  second_jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Second Step - Hello world
         run: echo "Hello world from run"
