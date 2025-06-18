@@ -13,6 +13,7 @@ jobs:
         run: echo "Hello world from run"
 
   second_jobs:
+    #if: false # configuro que no se ejecute el step
     needs: first_jobs
     runs-on: ubuntu-latest
 
