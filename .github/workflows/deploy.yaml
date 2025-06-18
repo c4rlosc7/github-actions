@@ -16,6 +16,15 @@ jobs:
       - name: First Step - Hello world
         run: echo "Hello world from run"
 
+      - name: Working dir before action
+        run: ls -al
+
+      - name: action
+        uses: actions/checkout@v4
+
+      - name: Working dir after action
+        run: ls -al        
+
   second_jobs:
     #if: false # configuro que no se ejecute el step
     # github.ref return branch to execute
@@ -25,6 +34,7 @@ jobs:
 
     steps:
       - name: Second Step - Hello world
-        run: echo "Hello world from run by "${{NAME}}
+        run: echo "Hello world from run by $NAME"
+        
       - name: test context
         run: echo ${{ github.ref }}
