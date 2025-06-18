@@ -25,6 +25,6 @@ jobs:
 
     steps:
       - name: Second Step - Hello world
-        run: echo "Hello world from run by "$NAME
+        run: echo "Hello world from run by "${{NAME}}
       - name: test context
         run: echo ${{ github.ref }}
