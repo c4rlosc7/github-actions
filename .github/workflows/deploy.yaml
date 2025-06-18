@@ -8,6 +8,9 @@ jobs:
   first_jobs:
     runs-on: ubuntu-latest
 
+    env:
+      NAME: CarlosMartinez
+
     steps:
       - name: First Step - Hello world
         run: echo "Hello world from run"
@@ -21,6 +24,6 @@ jobs:
 
     steps:
       - name: Second Step - Hello world
-        run: echo "Hello world from run"
+        run: echo "Hello world from run by $NAME"
       - name: test context
         run: echo ${{ github.ref }}
