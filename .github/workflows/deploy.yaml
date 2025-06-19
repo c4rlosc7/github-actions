@@ -1,13 +1,19 @@
-name: "Hello world from github-actions"
+name: "Deploy App"
 
 on:
   push:
-    branches: ["main"]
+    branches: ["2-exercise"]
 
 jobs:
-  deploy-hello:
+  setup-nodes:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - run: echo "It done"
-      - run: echo "Migrations is done"
+      - name: Test 
+        uses: actions/checkout@v4
+      - run: echo "Start deplaoy ..."
+    
+      - name: setup
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'

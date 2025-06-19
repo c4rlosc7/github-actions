@@ -42,4 +42,5 @@ reports/
 target/
 .vscode/
 .yamllm/
+.DS_Store
 **/.idea/
