@@ -10,8 +10,14 @@ jobs:
 
     steps:
 
+      - name: Test
+        run: ls
+
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Root project
+        run: cd example-page
     
       - name: Installing Nodejs
         uses: actions/setup-node@v4
