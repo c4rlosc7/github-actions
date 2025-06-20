@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Test output console 
+
+      - name: Checkout
         uses: actions/checkout@v4
-      - run: echo "Start deplaoy ..."
     
       - name: Installing Nodejs
         uses: actions/setup-node@v4
@@ -19,7 +19,7 @@ jobs:
           node-version: '18'
 
       - name: Node version
-        run: echo --version node
+        run: node --version
 
       - name: Install dependencies
         run: npm install
