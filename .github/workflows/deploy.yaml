@@ -22,7 +22,7 @@ jobs:
         run: node --version
 
       - name: Install dependencies
-        run: npm install
+        run: npm --version
 
       - name: Install Java
         uses: actions/checkout@v4
