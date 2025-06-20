@@ -22,8 +22,7 @@ jobs:
         run: node --version
 
       - name: Install dependencies
-        run: cd example-page
-      - run: npm install
+        run: cd example-page, run install
 
       - name: Install Java
         uses: actions/checkout@v4
