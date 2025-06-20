@@ -25,7 +25,7 @@ jobs:
         run: npm --version
 
       - name: Install dependencies
-        run: npm install        
+        run: ls   
 
       - name: Install Java
         uses: actions/checkout@v4
