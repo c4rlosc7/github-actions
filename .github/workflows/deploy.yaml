@@ -42,4 +42,4 @@ jobs:
     steps:
 
       - name: Deploy
-        uses: echo "Deploy..."
+        run: echo "Deploy..."
